@@ -1,5 +1,5 @@
 # NameFinder
-### Filipe Cruz - Software Development .
+### Filipe Cruz - Software Development Assignment.
 #### Contents
 - [Filipe Cruz - Software Development Assignment.](#Filipe-Cruz-Software-Development-Assignment)
   - [Contents](#contents)
@@ -38,3 +38,4 @@ Saying that I've organized my components by breaking them into five pieces.
 ***
 A list of the third party technologies used within the project:
 * [SnapshotTesting]("https://github.com/pointfreeco/swift-snapshot-testing.git"): Version 1.9.0 - Mapping.
+* [ScannerFlow](https://github.com/filipe7788/ScannerFlow): The SDK created for this assignment
