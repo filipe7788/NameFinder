@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309F07A2E2F06D290223786B /* Pods_ScannerFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBF7DCDC5DEEE023F44DCE8 /* Pods_ScannerFlow.framework */; };
+		A51118DC1022FA6D7A2C048B /* Pods_ScannerFlow_ScannerFlowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA22C4C624C58B1B8CF6380 /* Pods_ScannerFlow_ScannerFlowTests.framework */; };
 		EB5F4A0A273F14C000CFBC1C /* ScannerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F4A09273F14C000CFBC1C /* ScannerFlow.swift */; };
 		EB5F4A0C273F14DD00CFBC1C /* ScannerFlow+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F4A0B273F14DD00CFBC1C /* ScannerFlow+Initializer.swift */; };
 		EB5F4A0E273F14FF00CFBC1C /* ScannerFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F4A0D273F14FF00CFBC1C /* ScannerFlowView.swift */; };
@@ -30,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2643C06D468C8E351AE1F29B /* Pods-ScannerFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerFlow.debug.xcconfig"; path = "Target Support Files/Pods-ScannerFlow/Pods-ScannerFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		2EA22C4C624C58B1B8CF6380 /* Pods_ScannerFlow_ScannerFlowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScannerFlow_ScannerFlowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBF7DCDC5DEEE023F44DCE8 /* Pods_ScannerFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScannerFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF095FE18C429AC72E5B147 /* Pods-ScannerFlow-ScannerFlowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerFlow-ScannerFlowTests.release.xcconfig"; path = "Target Support Files/Pods-ScannerFlow-ScannerFlowTests/Pods-ScannerFlow-ScannerFlowTests.release.xcconfig"; sourceTree = "<group>"; };
+		87EE9A7F389A361B7A8608D9 /* Pods-ScannerFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerFlow.release.xcconfig"; path = "Target Support Files/Pods-ScannerFlow/Pods-ScannerFlow.release.xcconfig"; sourceTree = "<group>"; };
+		9EB010462718ECCB49E1D16A /* Pods-ScannerFlow-ScannerFlowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerFlow-ScannerFlowTests.debug.xcconfig"; path = "Target Support Files/Pods-ScannerFlow-ScannerFlowTests/Pods-ScannerFlow-ScannerFlowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB5F4A09273F14C000CFBC1C /* ScannerFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScannerFlow.swift; path = ../../../../../Documents/ScannerFlow.swift; sourceTree = "<group>"; };
 		EB5F4A0B273F14DD00CFBC1C /* ScannerFlow+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScannerFlow+Initializer.swift"; sourceTree = "<group>"; };
 		EB5F4A0D273F14FF00CFBC1C /* ScannerFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerFlowView.swift; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309F07A2E2F06D290223786B /* Pods_ScannerFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +65,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBFE0AF4273F12DB00AE808F /* ScannerFlow.framework in Frameworks */,
+				A51118DC1022FA6D7A2C048B /* Pods_ScannerFlow_ScannerFlowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86128399D16664518D2501E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2643C06D468C8E351AE1F29B /* Pods-ScannerFlow.debug.xcconfig */,
+				87EE9A7F389A361B7A8608D9 /* Pods-ScannerFlow.release.xcconfig */,
+				9EB010462718ECCB49E1D16A /* Pods-ScannerFlow-ScannerFlowTests.debug.xcconfig */,
+				7DF095FE18C429AC72E5B147 /* Pods-ScannerFlow-ScannerFlowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EBFE0ADF273F12DB00AE808F = {
 			isa = PBXGroup;
 			children = (
 				EBFE0AEB273F12DB00AE808F /* ScannerFlow */,
 				EBFE0AF7273F12DB00AE808F /* ScannerFlowTests */,
 				EBFE0AEA273F12DB00AE808F /* Products */,
+				86128399D16664518D2501E6 /* Pods */,
+				FCA1E9779EAA18D177D2E34F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +126,15 @@
 			path = ScannerFlowTests;
 			sourceTree = "<group>";
 		};
+		FCA1E9779EAA18D177D2E34F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBF7DCDC5DEEE023F44DCE8 /* Pods_ScannerFlow.framework */,
+				2EA22C4C624C58B1B8CF6380 /* Pods_ScannerFlow_ScannerFlowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -121,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBFE0AFD273F12DB00AE808F /* Build configuration list for PBXNativeTarget "ScannerFlow" */;
 			buildPhases = (
+				7728A1285BB00BFC4538287A /* [CP] Check Pods Manifest.lock */,
 				EBFE0AE4273F12DB00AE808F /* Headers */,
 				EBFE0AE5273F12DB00AE808F /* Sources */,
 				EBFE0AE6273F12DB00AE808F /* Frameworks */,
@@ -139,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBFE0B00273F12DB00AE808F /* Build configuration list for PBXNativeTarget "ScannerFlowTests" */;
 			buildPhases = (
+				B9187C65E5770E35E17BABE8 /* [CP] Check Pods Manifest.lock */,
 				EBFE0AEF273F12DB00AE808F /* Sources */,
 				EBFE0AF0273F12DB00AE808F /* Frameworks */,
 				EBFE0AF1273F12DB00AE808F /* Resources */,
+				CECB6D00A6805569F7C946AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +241,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7728A1285BB00BFC4538287A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScannerFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9187C65E5770E35E17BABE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScannerFlow-ScannerFlowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CECB6D00A6805569F7C946AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerFlow-ScannerFlowTests/Pods-ScannerFlow-ScannerFlowTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerFlow-ScannerFlowTests/Pods-ScannerFlow-ScannerFlowTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScannerFlow-ScannerFlowTests/Pods-ScannerFlow-ScannerFlowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBFE0AE5273F12DB00AE808F /* Sources */ = {
@@ -365,7 +464,9 @@
 		};
 		EBFE0AFE273F12DB00AE808F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2643C06D468C8E351AE1F29B /* Pods-ScannerFlow.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -393,7 +494,9 @@
 		};
 		EBFE0AFF273F12DB00AE808F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EE9A7F389A361B7A8608D9 /* Pods-ScannerFlow.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -421,6 +524,7 @@
 		};
 		EBFE0B01273F12DB00AE808F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB010462718ECCB49E1D16A /* Pods-ScannerFlow-ScannerFlowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +547,7 @@
 		};
 		EBFE0B02273F12DB00AE808F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF095FE18C429AC72E5B147 /* Pods-ScannerFlow-ScannerFlowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

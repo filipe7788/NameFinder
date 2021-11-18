@@ -9,6 +9,6 @@ import Foundation
 
 extension ScannerFlow {
     enum DataSource {
-        
+        let recognizedName: String
     }
 }

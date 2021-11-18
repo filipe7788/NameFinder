@@ -7,34 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB5F4A06273F142100CFBC1C /* ScannerFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5F4A02273F141400CFBC1C /* ScannerFlow.framework */; };
-		EB5F4A07273F142100CFBC1C /* ScannerFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB5F4A02273F141400CFBC1C /* ScannerFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB4C5AB52742EBD100916F69 /* ScannerFlow in Frameworks */ = {isa = PBXBuildFile; productRef = EB4C5AB42742EBD100916F69 /* ScannerFlow */; };
+		EB8054B82745B7CB00A6DDDF /* ScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8054B72745B7CB00A6DDDF /* ScannerResultView.swift */; };
+		EB8054BA2745BAC100A6DDDF /* ScannerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8054B92745BAC100A6DDDF /* ScannerResult.swift */; };
+		EB8054BC2745BADB00A6DDDF /* ScannerResult+Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8054BB2745BADB00A6DDDF /* ScannerResult+Initializer.swift */; };
+		EB8054C22745C78300A6DDDF /* ScannerResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8054C12745C78300A6DDDF /* ScannerResultCell.swift */; };
+		EB8054C62745CFEE00A6DDDF /* NameFinderSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8054C52745CFEE00A6DDDF /* NameFinderSnapshotTests.swift */; };
+		EBD4E6D82742E92600812EBF /* ScannerFlow in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD4E6D72742E8F500812EBF /* ScannerFlow */; };
 		EBFE0B10273F135500AE808F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B0F273F135500AE808F /* AppDelegate.swift */; };
 		EBFE0B12273F135500AE808F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B11273F135500AE808F /* SceneDelegate.swift */; };
-		EBFE0B14273F135500AE808F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B13273F135500AE808F /* ViewController.swift */; };
-		EBFE0B17273F135500AE808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFE0B15273F135500AE808F /* Main.storyboard */; };
+		EBFE0B14273F135500AE808F /* ScannerResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B13273F135500AE808F /* ScannerResultViewController.swift */; };
 		EBFE0B19273F135900AE808F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFE0B18273F135900AE808F /* Assets.xcassets */; };
 		EBFE0B1C273F135900AE808F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFE0B1A273F135900AE808F /* LaunchScreen.storyboard */; };
-		EBFE0B27273F135900AE808F /* NameFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B26273F135900AE808F /* NameFinderTests.swift */; };
 		EBFE0B31273F135900AE808F /* NameFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B30273F135900AE808F /* NameFinderUITests.swift */; };
 		EBFE0B33273F135900AE808F /* NameFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0B32273F135900AE808F /* NameFinderUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EB5F4A01273F141400CFBC1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB5F49FC273F141400CFBC1C /* ScannerFlow.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EBFE0AE9273F12DB00AE808F;
-			remoteInfo = ScannerFlow;
-		};
-		EB5F4A03273F141400CFBC1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB5F49FC273F141400CFBC1C /* ScannerFlow.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EBFE0AF3273F12DB00AE808F;
-			remoteInfo = ScannerFlowTests;
-		};
 		EBFE0B23273F135900AE808F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBFE0B04273F135500AE808F /* Project object */;
@@ -52,13 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EB5F4A08273F142100CFBC1C /* Embed Frameworks */ = {
+		EBD4E6AB2742DC6800812EBF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB5F4A07273F142100CFBC1C /* ScannerFlow.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,17 +54,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB5F49FC273F141400CFBC1C /* ScannerFlow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ScannerFlow.xcodeproj; path = ScannerFlow/ScannerFlow.xcodeproj; sourceTree = "<group>"; };
+		EB8054B72745B7CB00A6DDDF /* ScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultView.swift; sourceTree = "<group>"; };
+		EB8054B92745BAC100A6DDDF /* ScannerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResult.swift; sourceTree = "<group>"; };
+		EB8054BB2745BADB00A6DDDF /* ScannerResult+Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScannerResult+Initializer.swift"; path = "../../../../../Documents/ScannerResult+Initializer.swift"; sourceTree = "<group>"; };
+		EB8054C12745C78300A6DDDF /* ScannerResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultCell.swift; sourceTree = "<group>"; };
+		EB8054C52745CFEE00A6DDDF /* NameFinderSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFinderSnapshotTests.swift; sourceTree = "<group>"; };
+		EBD4E6D22742E40C00812EBF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../ScannerFlow/Package.swift; sourceTree = "<group>"; };
+		EBD4E6D72742E8F500812EBF /* ScannerFlow */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ScannerFlow; path = ../../ScannerFlow; sourceTree = "<group>"; };
 		EBFE0B0C273F135500AE808F /* NameFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFE0B0F273F135500AE808F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFE0B11273F135500AE808F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBFE0B13273F135500AE808F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBFE0B16273F135500AE808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBFE0B13273F135500AE808F /* ScannerResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultViewController.swift; sourceTree = "<group>"; };
 		EBFE0B18273F135900AE808F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFE0B1B273F135900AE808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBFE0B1D273F135900AE808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFE0B22273F135900AE808F /* NameFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBFE0B26273F135900AE808F /* NameFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFinderTests.swift; sourceTree = "<group>"; };
 		EBFE0B2C273F135900AE808F /* NameFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFE0B30273F135900AE808F /* NameFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFinderUITests.swift; sourceTree = "<group>"; };
 		EBFE0B32273F135900AE808F /* NameFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -87,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB5F4A06273F142100CFBC1C /* ScannerFlow.framework in Frameworks */,
+				EBD4E6D82742E92600812EBF /* ScannerFlow in Frameworks */,
+				EB4C5AB52742EBD100916F69 /* ScannerFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,26 +101,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB5F49FD273F141400CFBC1C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EB5F4A02273F141400CFBC1C /* ScannerFlow.framework */,
-				EB5F4A04273F141400CFBC1C /* ScannerFlowTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EB5F4A05273F142100CFBC1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBD4E6D22742E40C00812EBF /* Package.swift */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB8054B62745B73400A6DDDF /* ScannerResult */ = {
+			isa = PBXGroup;
+			children = (
+				EB8054BE2745BAE500A6DDDF /* MVVM */,
+				EB8054BD2745BADE00A6DDDF /* View */,
+				EB8054B92745BAC100A6DDDF /* ScannerResult.swift */,
+				EB8054BB2745BADB00A6DDDF /* ScannerResult+Initializer.swift */,
+			);
+			path = ScannerResult;
+			sourceTree = "<group>";
+		};
+		EB8054BD2745BADE00A6DDDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB8054B72745B7CB00A6DDDF /* ScannerResultView.swift */,
+				EB8054C12745C78300A6DDDF /* ScannerResultCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB8054BE2745BAE500A6DDDF /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE0B13273F135500AE808F /* ScannerResultViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		EBFE0B03273F135500AE808F = {
 			isa = PBXGroup;
 			children = (
-				EB5F49FC273F141400CFBC1C /* ScannerFlow.xcodeproj */,
 				EBFE0B0E273F135500AE808F /* NameFinder */,
 				EBFE0B25273F135900AE808F /* NameFinderTests */,
 				EBFE0B2F273F135900AE808F /* NameFinderUITests */,
@@ -149,10 +161,10 @@
 		EBFE0B0E273F135500AE808F /* NameFinder */ = {
 			isa = PBXGroup;
 			children = (
+				EB8054B62745B73400A6DDDF /* ScannerResult */,
+				EBD4E6D72742E8F500812EBF /* ScannerFlow */,
 				EBFE0B0F273F135500AE808F /* AppDelegate.swift */,
 				EBFE0B11273F135500AE808F /* SceneDelegate.swift */,
-				EBFE0B13273F135500AE808F /* ViewController.swift */,
-				EBFE0B15273F135500AE808F /* Main.storyboard */,
 				EBFE0B18273F135900AE808F /* Assets.xcassets */,
 				EBFE0B1A273F135900AE808F /* LaunchScreen.storyboard */,
 				EBFE0B1D273F135900AE808F /* Info.plist */,
@@ -163,7 +175,7 @@
 		EBFE0B25273F135900AE808F /* NameFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBFE0B26273F135900AE808F /* NameFinderTests.swift */,
+				EB8054C52745CFEE00A6DDDF /* NameFinderSnapshotTests.swift */,
 			);
 			path = NameFinderTests;
 			sourceTree = "<group>";
@@ -187,13 +199,16 @@
 				EBFE0B08273F135500AE808F /* Sources */,
 				EBFE0B09273F135500AE808F /* Frameworks */,
 				EBFE0B0A273F135500AE808F /* Resources */,
-				EB5F4A08273F142100CFBC1C /* Embed Frameworks */,
+				EBD4E6AB2742DC6800812EBF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NameFinder;
+			packageProductDependencies = (
+				EB4C5AB42742EBD100916F69 /* ScannerFlow */,
+			);
 			productName = NameFinder;
 			productReference = EBFE0B0C273F135500AE808F /* NameFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EB888EDF2745D3AE0038CF94 /* PBXTargetDependency */,
 				EBFE0B24273F135900AE808F /* PBXTargetDependency */,
 			);
 			name = NameFinderTests;
@@ -266,14 +282,11 @@
 				Base,
 			);
 			mainGroup = EBFE0B03273F135500AE808F;
+			packageReferences = (
+				EB888EDA2745D2DF0038CF94 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = EBFE0B0D273F135500AE808F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EB5F49FD273F141400CFBC1C /* Products */;
-					ProjectRef = EB5F49FC273F141400CFBC1C /* ScannerFlow.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EBFE0B0B273F135500AE808F /* NameFinder */,
@@ -283,23 +296,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		EB5F4A02273F141400CFBC1C /* ScannerFlow.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ScannerFlow.framework;
-			remoteRef = EB5F4A01273F141400CFBC1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EB5F4A04273F141400CFBC1C /* ScannerFlowTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ScannerFlowTests.xctest;
-			remoteRef = EB5F4A03273F141400CFBC1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		EBFE0B0A273F135500AE808F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -307,7 +303,6 @@
 			files = (
 				EBFE0B1C273F135900AE808F /* LaunchScreen.storyboard in Resources */,
 				EBFE0B19273F135900AE808F /* Assets.xcassets in Resources */,
-				EBFE0B17273F135500AE808F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,9 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFE0B14273F135500AE808F /* ViewController.swift in Sources */,
+				EB8054BC2745BADB00A6DDDF /* ScannerResult+Initializer.swift in Sources */,
+				EBFE0B14273F135500AE808F /* ScannerResultViewController.swift in Sources */,
+				EB8054C22745C78300A6DDDF /* ScannerResultCell.swift in Sources */,
 				EBFE0B10273F135500AE808F /* AppDelegate.swift in Sources */,
+				EB8054B82745B7CB00A6DDDF /* ScannerResultView.swift in Sources */,
 				EBFE0B12273F135500AE808F /* SceneDelegate.swift in Sources */,
+				EB8054BA2745BAC100A6DDDF /* ScannerResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFE0B27273F135900AE808F /* NameFinderTests.swift in Sources */,
+				EB8054C62745CFEE00A6DDDF /* NameFinderSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +357,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EB888EDF2745D3AE0038CF94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EB888EDE2745D3AE0038CF94 /* SnapshotTesting */;
+		};
 		EBFE0B24273F135900AE808F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EBFE0B0B273F135500AE808F /* NameFinder */;
@@ -371,14 +374,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EBFE0B15273F135500AE808F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBFE0B16273F135500AE808F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBFE0B1A273F135900AE808F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -514,6 +509,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ATC4M43PB8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NameFinder",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NameFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -530,7 +530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -542,6 +542,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ATC4M43PB8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NameFinder",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NameFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -558,7 +563,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -698,6 +703,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB888EDA2745D2DF0038CF94 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB4C5AB42742EBD100916F69 /* ScannerFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ScannerFlow;
+		};
+		EB888EDE2745D3AE0038CF94 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB888EDA2745D2DF0038CF94 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBFE0B04273F135500AE808F /* Project object */;
 }
